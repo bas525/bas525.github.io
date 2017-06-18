@@ -2,18 +2,18 @@
     <head>
         <title>Brandan Sankar</title>
     
-    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
     </head>
     
     <body>
-        <p>Testing</p>
+        <p id="test">Testing</p>
         <button onclick="showData()"> Press Me</button>
         <script type="application/javascript">
             
             function showData() {
-            
-                alert("hello");
+                $("#test").css({"color" : "red"});
+                
             }
         
         </script>
