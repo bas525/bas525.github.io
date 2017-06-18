@@ -7,11 +7,14 @@
     </head>
     
     <body>
-        <p id="test">Testing</p>
-        <button onclick="showData()"> Press Me</button>
+
         <script type="application/javascript">
             
-            alert("test");
+            $.ajax("inf.txt").done(function(data) {
+                alert(data);  
+            }).fail(function() {
+               alert("Could not Get data");
+            };
         
         </script>
         
